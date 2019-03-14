@@ -1,0 +1,6 @@
+useDynLib(GGPA)
+import( Rcpp, stats, methods, graphics, Rgraphviz )
+exportPattern("^[[:alpha:]]+")
+exportClasses(Rcpp_cGGPA)
+export( GGPA, assoc )
+export( show, plot, fdr, estimates )
