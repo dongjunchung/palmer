@@ -4,11 +4,11 @@
 #'
 #' @export
 #'
-#' @param X matrix of binary values with n sample by p variable
-#' @param path list. Gene list for the prior information (default: NULL)
+#' @param X Matrix of binary values with n samples by p variables
+#' @param path List. Gene list for the prior information (default: NULL)
 #' @param K The number of gene clusters (default: 3)
 #' @param L The number of GO term clusters (default: 3)
-#' @param B Number of bootstrapping (default: 1000)
+#' @param B The number of bootstrappings (default: 1000)
 #'
 #' @examples
 #' data(sdata)
@@ -144,7 +144,7 @@ palmer <- function(X,path=NULL,K=3,L=3,B=1000) {
     K=K; L=L;
     LC <- LCi
     KC <- KCi
-	
+
     theta <- matrix(,K,L)
     for (k in 1:K){
       for (l in 1:L){

@@ -7,15 +7,15 @@
 palmer(X, path = NULL, K = 3, L = 3, B = 1000)
 }
 \arguments{
-\item{X}{matrix of binary values with n sample by p variable}
+\item{X}{Matrix of binary values with n samples by p variables}
 
-\item{path}{list. Gene list for the prior information (default: NULL)}
+\item{path}{List. Gene list for the prior information (default: NULL)}
 
 \item{K}{The number of gene clusters (default: 3)}
 
 \item{L}{The number of GO term clusters (default: 3)}
 
-\item{B}{Number of bootstrapping (default: 1000)}
+\item{B}{The number of bootstrappings (default: 1000)}
 }
 \description{
 A constrained biclustering Algoritm to improve pathway annotation bssed on the biomedical literature mining
