@@ -44,7 +44,6 @@ Construct \code{palmer} class object.
 
 
 \examples{
-\dontrun{
 # Loading data
 
 data(sdata)
@@ -62,5 +61,4 @@ predict(fit.palmer)
 # Visualize the clustering analysis result
 
 plot(fit.palmer)
-}
 }

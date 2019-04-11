@@ -31,10 +31,6 @@ Jin Hyun Nam
 Maintainer: Dongjun Chung <chungd@musc.edu>
 }
 
-\references{
-
-
-}
 
 \keyword{ package }
 
@@ -44,7 +40,6 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 
 
 \examples{
-\donttest{
 library(palmer)
 
 # Loading data
@@ -64,5 +59,4 @@ predict(fit.palmer)
 # Visualize the clustering analysis result
 
 plot(fit.palmer)
-}
 }

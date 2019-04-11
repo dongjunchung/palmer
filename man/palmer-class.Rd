@@ -55,7 +55,6 @@ Objects can be created by calls of the form \code{new("palmer", ...)}.
 \examples{
 showClass("palmer")
 
-\dontrun{	
 data(sdata)
 data(pathway)
 
@@ -63,7 +62,6 @@ fit.palmer <- palmer(X=sdata,path=pathway,K=2,L=3,B=100)
 fit.palmer
 predict(fit.palmer)
 plot(fit.palmer)
-}
 }
 
 \keyword{classes}
