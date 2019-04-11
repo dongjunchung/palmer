@@ -44,7 +44,7 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 
 
 \examples{
-\dontrun{
+\donttext{
 library(palmer)
 
 # Loading data
