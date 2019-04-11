@@ -16,7 +16,7 @@ class?palmer
 Installation
 ============ 
 
-The stable versions of 'GPA' package can be obtained from the following URLs:
+The stable versions of 'palmer' package can be obtained from the following URLs:
 
 Package source: [https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tar.gz?raw=true](https://github.com/dongjunchung/GPA_binary/blob/master/GPA_1.1-0.tar.gz?raw=true)
 
