@@ -1,9 +1,5 @@
 
-#' An S4 class to represent hubviz model fitting results.
-#'
-#' @slot data data
-#' @slot init model initialization
-#' @slot result clustering analysis results
+# bin-level data
 
 setClass( Class="palmer",
     representation=representation(

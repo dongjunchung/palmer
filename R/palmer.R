@@ -1,25 +1,4 @@
-#' PALMER
-#'
-#' A constrained biclustering Algoritm to improve pathway annotation bssed on the biomedical literature mining
-#'
-#' @export
-#'
-#' @param X Matrix of binary values with n samples by p variables
-#' @param path List. Gene list for the prior information (default: NULL)
-#' @param K The number of gene clusters (default: 3)
-#' @param L The number of GO term clusters (default: 3)
-#' @param B The number of bootstrappings (default: 1000)
-#'
-#' @examples
-#' data(sdata)
-#' data(pathway)
-#'
-#' fit.palmer <- palmer(X=sdata,path=pathway,K=2,L=3,B=100)
-#'
-#' fit.palmer
-#' predict(fit.palmer)
-#' plot(fit.palmer)
-
+# main function of PALMER
 
 palmer <- function(X,path=NULL,K=3,L=3,B=1000) {
 

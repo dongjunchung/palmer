@@ -1,14 +1,5 @@
 
-#' @import pheatmap
-#' @exportMethod predict plot
-
-#' @title Summary of palmer results
-#'
-#' @description Summary of palmer results
-#'
-#' @aliases show.palmer
-#'
-#' @param object output of palmer function
+# generic methods for "palmer" class
 
 setMethod(
   f="show",
@@ -29,18 +20,6 @@ setMethod(
   }
 )
 
-
-
-
-#' @title palmer result
-#'
-#' @description Return palmer result
-#'
-#' @aliases predict.palmer
-#'#'
-#' @param object output of palmer function
-
-
 setMethod(
   f="predict",
   signature="palmer",
@@ -59,15 +38,6 @@ setMethod(
   }
 )
 
-
-
-#' @title Plotting function
-#'
-#' @description Heatmap with clustered data
-#'
-#' @aliases plot.palmer
-#'
-#' @param x output of palmer function
 
 setMethod(
   f="plot",
