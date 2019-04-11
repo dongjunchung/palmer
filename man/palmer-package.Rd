@@ -38,12 +38,10 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 
 \keyword{ package }
 
-<!--
 \seealso{
-\code{\link{GPA}}, \code{\link{assoc}}, \code{\link{pTest}}, \code{\link{aTest}}, 
-\code{\linkS4class{GPA}}, \code{\link{fitAll}}, \code{\link{shinyGPA}}.
+\code{\link{palmer}}
 }
--->
+
 
 \examples{
 \dontrun{
