@@ -34,5 +34,6 @@ install_github("dongjunchung/palmer")
 
 References
 ==========
+Nam JH, Couch D, Silveira W.A, Yu Z and Chung D (2019) ''PALMER: A constrained biclustering Algorithm to improve pathway annotation based on the biomedical literature mining''.
 
 
