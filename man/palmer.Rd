@@ -33,15 +33,10 @@ Construct \code{palmer} class object.
 }
 
 \references{
-
+...
 }
 
 \author{ Jin Hyun Nam }
-
-\seealso{
-
-}
-
 
 \examples{
 # Loading data
