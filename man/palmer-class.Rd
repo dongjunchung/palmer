@@ -15,25 +15,25 @@ Objects can be created by calls of the form \code{new("palmer", ...)}.
 \section{Slots}{
 \describe{
 
-\item{\code{data}}{Object of class \code{"matrix"}, 
+\item{\code{data}}{Object of class \code{"matrix"},
     	representing the raw data for PALMER model. }
 
-\item{\code{init}}{Object of class \code{"list"}, 
-    	representing the setting for PALMER model fitting.} 
+\item{\code{init}}{Object of class \code{"list"},
+    	representing the setting for PALMER model fitting.}
 
-\item{\code{result}}{Object of class \code{"list"}, 
-    	representing the fitted PALMER model.} 
+\item{\code{result}}{Object of class \code{"list"},
+    	representing the fitted PALMER model.}
 }}
 
 
 \section{Methods}{
   \describe{
     \item{show}{\code{signature(object = "palmer")}: provide brief summary of the object. }
-    
-    \item{predict}{\code{signature(object = "palmer")}: 
+
+    \item{predict}{\code{signature(object = "palmer")}:
 		provide Gene and GO term cluster and its probability.}
-		
-    \item{plot}{\code{signature(x = "plamer", y=missing)}: 
+
+    \item{plot}{\code{signature(x = "palmer", y=missing)}:
     provide visualization of constrained biclustersing analysis result.}
 
 }}
@@ -43,7 +43,7 @@ Objects can be created by calls of the form \code{new("palmer", ...)}.
 }
 
 \references{
-
+Nam JH, Couch D, Silveira W.A, Yu Z and Chung D (2019) ''PALMER: A constrained biclustering Algorithm to improve pathway annotation based on the biomedical literature mining''.
 }
 
 \author{ Jin Hyun Nam }

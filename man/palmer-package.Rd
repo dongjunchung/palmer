@@ -8,8 +8,8 @@ PALMER (Constrained Biclustering Algorithm to Improve Pathway Annotation Based o
 
 \description{
 This package provides functions for fitting palmer,
-a constrained biclustering approach that allows to identify indirect relationships among genes 
-based on the text mining of biomedical literature, which allows researchers to utilize prior biological knowledge to guide identification of gene-gene associations. 
+a constrained biclustering approach that allows to identify indirect relationships among genes
+based on the text mining of biomedical literature, which allows researchers to utilize prior biological knowledge to guide identification of gene-gene associations.
 }
 
 \details{
@@ -21,9 +21,11 @@ Date: \tab 2019-02-28\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
+
 This package contains a main class, \code{palmer}, which represents PALMER model fit.
 
 The main methods for the PALMER is \code{palmer}, which fits constrained biclustering.
+}
 
 \author{
 Jin Hyun Nam
@@ -31,6 +33,9 @@ Jin Hyun Nam
 Maintainer: Dongjun Chung <chungd@musc.edu>
 }
 
+\references{
+Nam JH, Couch D, Silveira W.A, Yu Z and Chung D (2019) ''PALMER: A constrained biclustering Algorithm to improve pathway annotation based on the biomedical literature mining''.
+}
 
 \keyword{ package }
 
