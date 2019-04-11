@@ -44,7 +44,7 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 
 
 \examples{
-\dontrun{
+
 library(palmer)
 
 # Loading data
@@ -64,5 +64,5 @@ predict(fit.palmer)
 # Visualize the clustering analysis result
 
 plot(fit.palmer)
-}
+
 }
