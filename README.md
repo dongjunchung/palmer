@@ -11,6 +11,7 @@ PALMER (a constrained biclustering algorithm to improve **P**athway **A**nnotati
 library(palmer)
 package?palmer
 class?palmer
+vignette("palmer")
 ```
 
 Installation
