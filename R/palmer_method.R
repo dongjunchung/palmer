@@ -28,8 +28,8 @@ setMethod(
     # extract objects
 
     result <- object@result
-    gene <- cbind(result$Genecluster, result$Geneprob)
-    go <- cbind(result$GOcluster,result$GOprob)
+    gene <- cbind("True gene cluster"=result$Geneset, "Predicted gene cluster"=result$Genecluster, "Probability"=result$Geneprob)
+    go <- cbind("GO term cluster"=result$GOcluster,"Probability"=result$GOprob)
 
     return(list(
       Gene = gene,
