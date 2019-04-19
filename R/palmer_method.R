@@ -65,7 +65,7 @@ setMethod(
     go <- color[unique(LC1)]; names(go) <- unique(LC1)
     colcolors <- list(Gene=gene, Cluster=cluster, GO=go)
 
-    heat <- pheatmap(data[row.index,col.index],color=c("white", "black"),cluster_row=FALSE, cluster_col=F,
+    heat <- pheatmap(data[,col.index],color=c("white", "black"),cluster_row=FALSE, cluster_col=F,
                      annotation_col=anno_col, annotation_row=anno_row,
                      legend=T, annotation_colors=colcolors,annotation_legend=T,
                      show_rownames = T, show_colnames = T,...
