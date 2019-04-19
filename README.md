@@ -5,7 +5,7 @@ PALMER: A Constrained Biclustering Algorithm to Improve Pathway Annotation Based
 
 PALMER (a constrained biclustering algorithm to improve **P**athway **A**nnotation based on the biomedical **L**iterature **M**ining) is a constrained biclustering approach that allows to identify indirect relationships among genes based on the text mining of biomedical literature, which allows researchers to utilize prior biological knowledge to guide identification of gene-gene associations.
 'palmer' package provides computationally efficient and user friendly interface to fit the PALMER models. 
-[The 'palmer' vignette](https://github.com/dongjunchung/GPA/blob/master/inst/doc/GPA-example.pdf?raw=true) provides a good start point for the step-by-step data analysis using 'palmer' package.The following help pages provide a good start point for the genetic analysis using the 'GPA' package, including the overview of 'GPA' package and the example command lines:
+[The 'palmer' vignette](https://github.com/dongjunchung/palmer/blob/master/inst/doc/palmer.pdf?raw=true) provides a good start point for the step-by-step data analysis using 'palmer' package.The following help pages provide a good start point for the genetic analysis using the 'GPA' package, including the overview of 'GPA' package and the example command lines:
 
 ```
 library(palmer)
