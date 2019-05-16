@@ -9,6 +9,7 @@ Description: This package provides funtions for Identification of new pathway-mo
 License: GPL (>=2)
 Encoding: UTF-8
 Imports: pheatmap
+Suggests: httr, jsonlite, getPass
 RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown 
 VignetteBuilder: knitr
