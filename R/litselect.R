@@ -42,11 +42,13 @@ palmer_api <- function(api_type, terms=NA, terms2=NA,
       # to do: add an option to pass/ignore/choose none
       # check until get the validated input
       while(!(select %in% seq(0, subset_row, 1))){
+        cat("\nDuplicates ", i, " -------------------------------------------\n")
         print(subset)
         cat("\nPlease choose the genes you want to keep (0 to keep them all):#")
         select <- readLines(file("stdin"), n=1)
         # to do: validate select/ not necessary turn it into an integer
         select <- as.integer(select)
+        cat("\n--------------------------------------------------------------\n")
       }
       if(select <= subset_row&&select >= 1){
         new_add <- subset[select, ]
@@ -145,10 +147,11 @@ palmer_api <- function(api_type, terms=NA, terms2=NA,
     #path
     path <- "/id_mapper_1"
     query_url <- paste(base_url, path, sep="")
+    query_body <- list(terms=terms)
     html_result <- POST(query_url, body=query_body, encode="json")$content
     html_content <- rawToChar(html_result)  
     text_result <- fromJSON(html_content) 
-    if(is.null(text_result$content)){
+    if(is.null(text_result$output_gene)){
       warning("No results are found")
     }
     gene_df <- text_result$output_gene
