@@ -8,7 +8,7 @@ Maintainer: Dongjun Chung <chungd@musc.edu>
 Description: This package provides funtions for Identification of new pathway-modulating genes using constrained biclustering bssed on the biomedical literature mining
 License: GPL (>=2)
 Encoding: UTF-8
-Imports: pheatmap knitr rmarkdown
+Imports: pheatmap, knitr, rmarkdown
 RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown 
 VignetteBuilder: knitr
