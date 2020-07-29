@@ -54,7 +54,7 @@ kegg_path
 ```
 ```{r, fig.width=5, fig.height=5}
 library(pheatmap)
-pheatmap(sdata,color=c("white","black"))
+pheatmap(kegg_data,color=c("white","black"))
 ```
 
 
