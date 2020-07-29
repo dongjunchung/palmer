@@ -2,14 +2,13 @@ Package: palmer
 Type: Package
 Title: PALMER: A Constrained Biclustering Algorithm to Improve Pathway Annotation Based on the Biomedical Literature Mining
 Version: 0.1
-Date: 2019-02-28
+Date: 2020-07-30
 Author: Jin Hyun Nam
 Maintainer: Dongjun Chung <chungd@musc.edu>
 Description: This package provides funtions for Identification of new pathway-modulating genes using constrained biclustering bssed on the biomedical literature mining
 License: GPL (>=2)
 Encoding: UTF-8
 Imports: pheatmap
-Suggests: httr, jsonlite, getPass
 RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown 
 VignetteBuilder: knitr
