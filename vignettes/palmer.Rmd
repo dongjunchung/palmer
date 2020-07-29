@@ -1,10 +1,11 @@
 ---
 title: "PALMER: A Constrained Biclustering Algorithm to Improve Pathway Annotation Based on the Biomedical Literature Mining with 'palmer' Package"
-author: "Jin Hyun Nam$^1$, Daniel couch$^1$, Willian A. da Silveira$^{2,3}$, Zhenning Yu$^1$, and Dongjun Chung$^1$  
+author: "Jin Hyun Nam$^1,2$, Daniel couch$^1$, Willian A. da Silveira$^{3,4}$, Zhenning Yu$^1$, and Dongjun Chung$^1$  
 $^1$Department of Public health Sciences, Medical University of South Carolina, Charleston, SC, USA.     
-$^2$Department of Pathology and Laboratory Medicine, Medical University of South Carolina, Charleston, SC, USA.      
-$^3$Center for Genomic Medicine, Medical University of South Carolina, Charleston, SC, USA."
-date: "April 12, 2019"
+$^2$School of Pharmacy, Sungkyunkwan University, Suwon, Korea.
+$^3$Department of Pathology and Laboratory Medicine, Medical University of South Carolina, Charleston, SC, USA.      
+$^4$Center for Genomic Medicine, Medical University of South Carolina, Charleston, SC, USA."
+date: "July 30, 2020"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
@@ -35,21 +36,21 @@ Users can find the most up-to-date versions of '**palmer**' package in our GitHu
 
 ## 2. Exploration of Data
 
-In this vignette, we use a example data set which are composed of binary matrix to be clusterd and two gene sets (pathways) as constraints. The binary matrix is size of 100 genes $\times$ 100 GO terms matrix, 1 value indicates that a gene is associated with a GO terms and 0 otherwise. First pathways is set of 27 genes and second one is set of 23 genes, which are randomly selected from the 100 gene list of binary matrix. Thus, assumption of data is that both 27 genes and 23 genes are known as gene pathwy and remaining 50 genes are clusterd to each pathway.
+In this vignette, we use a example data set which are composed of binary matrix to be clusterd and two gene sets (pathways) as constraints. Two gene sets are composed of mTOR signaling pathway (52 genes) and NOTCH signaling pathway (47 genes). The binary matrix is size of 99 genes $\times$ 47 GO terms matrix, 1 value indicates that a gene is associated with a GO terms and 0 otherwise. First pathways is set of 26 genes and second one is set of 23 genes, which are randomly selected from the each gene list. Thus, assumption of data is that both 26 genes and 23 genes are known as gene pathwy and remaining 50 genes are clusterd to each pathway.
 
 The data sets can be loaded with the command:
 
 ```{r}
-data(sdata)
-data(pathway)
+data(kegg_data)
+data(kegg_path)
 ```
 
 ```{r}
-dim(sdata)
-sdata[1:6,1:6]
+dim(kegg_data)
+kegg_data[1:6,1:6]
 ```
 ```{r}
-pathway
+kegg_path
 ```
 ```{r, fig.width=5, fig.height=5}
 library(pheatmap)
@@ -59,13 +60,13 @@ pheatmap(sdata,color=c("white","black"))
 
 ## 3. Fitting the PALMER
 
-We are now ready to fit a PALMER using binary matrix and pathway information described above (sdata and pathway).
+We are now ready to fit a PALMER using binary matrix and pathway information described above (kegg_data and kegg_path).
 PAMLER is essentially a biclustering algorithm, where conditional mixture models for genes and GO terms are fitted iteratively and confidence of these identifications is estimated using a block-specific bootstrap procedure. R package palmer provides convience function 'palmer' for fitting PALMER and just need three arguments except for dataset and pathway, which are number of gene cluster, number of GO term cluster and number of bootstrapping for estimation of uncertainy of gene clustering. In this vignette, we set 2 for gene cluster number (K=2) under data assumption and set 3 for GO term cluster number (L=3). For the bootstraps, we set 100 (B=100, default is 1000).     
 
 We fit the PALMER with the command:
 
 ```{r, message=FALSE}
-fit.palmer <- palmer(X=sdata,path=pathway,K=2,L=3,B=100)
+fit.palmer <- palmer(X=kegg_data,path=kegg_path,K=2,L=3,B=100)
 ```
 
 The following command prints out a summary of PALMER fit, including data summary and model setting.
